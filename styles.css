@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Acid Grotesk Regular";
+  src: url("./assets/AcidGrotesk-Regular.otf");
+}
+@font-face {
+  font-family: "Libre Caslon Condensed";
+  src: url("./assets/LibreCaslonCondensed-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Libre Caslon Condensed";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Acid Grotesk Regular";
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2em;
+}
+
+.container .item {
+  width: 100%;
+  padding: 0.125em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  font-size: 80px;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.item:nth-child(1){
+  border-top: 2px solid #000;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  object-fit: scale-down;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  overflow: hidden;
+  flex: 0;
+}
+
+/*img {
+  width: 125px;
+  height: auto;
+}*/
+
+.item:hover{
+  gap: 20px;
+}
+
+.item:hover .img{
+  flex: 0.20;
+}
+
+.w1 {
+  text-align: right;
+}
